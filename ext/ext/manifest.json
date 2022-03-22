@@ -1,23 +1,17 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
   
     "name": "test",
     "description": "do i work",
     "version": "1.0",
   
-    "browser_action": {
+    "action": {
      "default_icon": "icon.png",
      "default_popup": "popup.html"
     },
 
     "permissions": [
-     "activeTab",
      "tabs",
-     "webRequest",
-     "<all_urls>"
-    ],
-
-    "background": {
-        "scripts": [ "background.js", "snoowrap-v1.js" ]
-    }
+     "webRequest"
+    ]
   }
